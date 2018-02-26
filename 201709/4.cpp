@@ -66,11 +66,17 @@ int main(void)
         DFS(i, Head, visited);
         bool tag = check(N, visited);
 
+        if (tag)
+        {
+            count++;
+            continue;
+        }
+
         reset(N, visited);
         DFS(i, Head_Reverse, visited);
         bool tag_reverse = check(N, visited);
 
-        if (tag || tag_reverse) count++;
+        if (tag_reverse) count++;
     }
 
     cout<<count;
