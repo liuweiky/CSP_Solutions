@@ -25,7 +25,7 @@ void increase(int i)
             v.insert(it, Object(i));
             return;
         }
-    v.insert(v.end(), Object(i));
+    v.insert(v.end(), Object(i));   //i is max in this case
 }
 
 bool cmp(Object o1, Object o2)
@@ -45,7 +45,7 @@ int main(void)
         increase(j);
     }
 
-    stable_sort(v.begin(), v.end(), cmp);   //sort 是不稳定的排序
+    stable_sort(v.begin(), v.end(), cmp);   //sort is not stable
 
     for (vector<Object>::iterator it = v.begin(); it != v.end(); it++)
         cout<<it->num<<" "<<it->time<<endl;
