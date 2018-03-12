@@ -108,11 +108,11 @@ int main(void)
 
     int d = 0;
 
-    for (int i = n; i < m + n; i++)
+    for (int i = 0; i < m + n; i++)
     {
         maxDepth = 0;
         reset(visited, m + n);
-        DFS(Head, 4, m + n, visited, 0);
+        DFS(Head, i, m + n, visited, 0);
         if (d < maxDepth) d = maxDepth;
     }
 
