@@ -16,7 +16,13 @@ int main(void)
     for (int i = m-1; i >= 0; i--)
     {
         for (int j = 0; j < n; j++)
-            cout<<a[j][i]<<" ";
+        {
+            cout<<a[j][i];
+            if (j != n-1)
+                cout << " ";
+        }
         cout<<endl;
     }
+
+    return 0;
 }
