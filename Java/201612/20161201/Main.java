@@ -20,7 +20,7 @@ public class Main {
 				else if (numbers.get(i) < numbers.get(j))
 					above += 1;
 			}
-			if (above == below && !outstr.contains(String.valueOf(i))) {
+			if (above == below && !outstr.contains(String.valueOf(numbers.get(i)))) {
 				outstr += (numbers.get(i) + " ");
 			}
 		}
