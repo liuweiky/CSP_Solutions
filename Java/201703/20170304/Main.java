@@ -1,4 +1,5 @@
-import java.util.Scanner;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 
 public class Main {
 	// static int[][] graph = new int[100000][100000];
@@ -10,17 +11,23 @@ public class Main {
 	static int[] path = new int[100001];
 	static int[] dis = new int[100001];
 	
-	public static void main(String[] args) {
-		Scanner scanner = new Scanner(System.in);
-		N = scanner.nextInt();
-		M = scanner.nextInt();
+	public static void main(String[] args) throws Exception {
+		
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		
+		String line = br.readLine();
+		String[] datas = line.split(" ");
+		
+		N = Integer.parseInt(datas[0]);
+		M = Integer.parseInt(datas[1]);
 		for (int i = 1; i <= N; i++)
 			head[i] = new Vertex(i);
 		for (int i = 0; i < M; i++) {
 			int a, b, c;
-			a = scanner.nextInt();
-			b = scanner.nextInt();
-			c = scanner.nextInt();
+			datas = br.readLine().split(" ");
+			a = Integer.parseInt(datas[0]);
+			b = Integer.parseInt(datas[1]);
+			c = Integer.parseInt(datas[2]);
 			Edge edge = new Edge(b, c);
 			edge.link = head[a].adjacent;
 			head[a].adjacent = edge;
