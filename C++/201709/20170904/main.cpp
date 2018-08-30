@@ -6,11 +6,11 @@ using namespace std;
 int graph1[1001][1001];
 int graph2[1001][1001];
 int N, M;
-int visit1[1001], visit2[1001], visit[1001];
+int visit1[1001], visit2[1001];
 
 void dfs(int v, int visited[1001], int graph[1001][1001]);
 bool check();
-void init(int a, int b, int c);
+void init(int a, int b);
 
 int main()
 {
@@ -27,13 +27,13 @@ int main()
 
     for (int i = 1; i <= N; i++)
     {
-        init(1, 1, 1);
+        init(1, 1);
         dfs(i, visit1, graph1);
         if (check())
             count ++;
         else
         {
-            init(0, 1, 1);
+            init(0, 1);
             dfs(i, visit2, graph2);
             if (check())
                 count++;
@@ -56,19 +56,15 @@ void dfs(int v, int visited[1001], int graph[1001][1001])
 bool check()
 {
     for (int i = 1; i <= N; i++)
-        visit[i] = visit1[i] + visit2[i];
-    for (int i = 1; i <= N; i++)
-        if (visit[i] == 0)
+        if (visit1[i] + visit2[i] == 0)
             return false;
     return true;
 }
 
-void init(int a, int b, int c)
+void init(int a, int b)
 {
     if (a == 1)
         memset(visit1, 0, sizeof(visit1));
     if (b == 1)
         memset(visit2, 0, sizeof(visit2));
-    if (c == 1)
-        memset(visit, 0, sizeof(visit));
 }
