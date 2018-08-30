@@ -53,7 +53,7 @@ public class Main {
 			Edge edge = vertex.adjacent;
 			while (edge != null) {
 				if (visited[edge.verAdj] == 0 &&
-					dis[edge.verAdj] > Math.max(edge.cost, dis[v])) {	// 这里的距离应改为路径上最短隧道长度，而不是总长度
+					dis[edge.verAdj] > Math.max(edge.cost, dis[v])) {	// 这里的距离应改为路径上最长隧道长度，而不是总长度
 					dis[edge.verAdj] = Math.max(edge.cost, dis[v]);
 					path[edge.verAdj] = v;
 				}
