@@ -17,11 +17,21 @@ vector<Edge*> edges;
 
 int GetFather(int a)
 {
+    int b = a;
     while (true)
         if (father[a] == a)
             break;
         else
             a = father[a];
+
+    while (true)
+        if (father[b] == a)
+            break;
+        else {
+            int c = b;
+            b = father[b];
+            father[c] = a;
+        }
     return a;
 }
 
