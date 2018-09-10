@@ -23,7 +23,7 @@
 
 ## 201803-4 棋局评估
 
-[C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180304/main.cpp)
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180304/main.cpp)
 
 ### 解题思路
 
