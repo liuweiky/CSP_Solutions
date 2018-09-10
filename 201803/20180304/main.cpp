@@ -8,6 +8,10 @@
 #define BOB 2
 #define EMPTY 0
 
+#define TIE 1
+#define WIN 2
+#define NOT_FINISHED 0
+
 using namespace std;
 
 int chess[10];
@@ -25,11 +29,11 @@ int check()
         (chess[3] == chess[6] && chess[6] == chess[9] && chess[3] != EMPTY) ||
         (chess[1] == chess[5] && chess[5] == chess[9] && chess[1] != EMPTY) ||
         (chess[3] == chess[5] && chess[5] == chess[7] && chess[3] != EMPTY))
-            return true;
+            return WIN;
     for (int i = 1; i <= 9; i++)
         if (chess[i] == EMPTY)
-            return false;
-    return true;
+            return NOT_FINISHED;
+    return TIE;
 }
 
 int get_ascore()
@@ -51,11 +55,13 @@ int get_bscore()
 }
 
 // alice 只想获得很大的score
-int adfs()
+int adfs()  // 返回 alice 下棋的最好得分情况
 {
-    if (check())    // 上次是bob下的，他赢了
-        return get_bscore();
-    int max_score = INT_MIN;    // 记录bob能获得的score中最大的情况，不让bob获得很小score
+    if (check() == WIN)    // 上次是bob下的，他赢了
+        return get_bscore() - 1;
+    else if (check() == TIE)
+        return 0;
+    int max_score = INT_MIN;    // 记录alice 自己能获得的score中最大的情况
     for (int i = 1; i <= 9; i++)
     {
         if (chess[i] == EMPTY)
@@ -68,18 +74,20 @@ int adfs()
     return max_score;
 }
 
-// bob 只想获得很小的score
-int bdfs()
+// bob 不让alice获得很大score
+int bdfs()  // 返回 bob 落子后，使得 alice 得分最低
 {
-    if (check())    // 上次是alice下的，她赢了
-        return get_ascore();
+    if (check() == WIN)    // 上次是alice下的，她赢了
+        return get_ascore() + 1;
+    else if (check() == TIE)
+        return 0;
     int min_score = INT_MAX;    // 记录alice能获得的score中最小的情况，不让alice获得很大score
     for (int i = 1; i <= 9; i++)
     {
         if (chess[i] == EMPTY)
         {
             chess[i] = BOB;
-            min_score = min(adfs(), min_score);
+            min_score = min(adfs(), min_score); // 在 alice 得分中取最小得分
             chess[i] =  EMPTY;
         }
     }
@@ -97,15 +105,7 @@ int main()
         memset(chess, 0, 10);
         for (int i = 1; i <= 9; i++)
             scanf("%d", &chess[i]);
-        int s = adfs();
-        if (s < 0)
-        {
-            s -= 1;
-        } else if (s > 0)
-        {
-            s += 1;
-        }
-        printf("%d\n", s);
+        printf("%d\n", adfs());
     }
     return 0;
 }
