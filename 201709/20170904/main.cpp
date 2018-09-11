@@ -1,14 +1,15 @@
 #include <stdio.h>
 #include <string.h>
+#include <vector>
 
 using namespace std;
 
-int graph1[1001][1001];
-int graph2[1001][1001];
+vector<int> graph1[1001];
+vector<int> graph2[1001];
 int N, M;
 int visit1[1001], visit2[1001];
 
-void dfs(int v, int visited[1001], int graph[1001][1001]);
+void dfs(int v, int visited[1001], vector<int> graph[1001]);
 bool check();
 void init(int a, int b);
 
@@ -19,8 +20,8 @@ int main()
     {
         int s, t;
         scanf("%d %d", &s, &t);
-        graph1[s][t] = 1;
-        graph2[t][s] = 1;
+        graph1[s].push_back(t);
+        graph2[t].push_back(s);
     }
 
     int count = 0;
@@ -45,12 +46,12 @@ int main()
     return 0;
 }
 
-void dfs(int v, int visited[1001], int graph[1001][1001])
+void dfs(int v, int visited[1001], vector<int> graph[1001])
 {
     visited[v] = 1;
-    for (int i = 1; i <= N; i++)
-        if (visited[i] == 0 && graph[v][i] == 1)
-            dfs(i, visited, graph);
+    for (int i = 0; i < graph[v].size(); i++)
+        if (visited[graph[v][i]] == 0)
+            dfs(graph[v][i], visited, graph);
 }
 
 bool check()
