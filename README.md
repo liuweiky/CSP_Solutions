@@ -46,3 +46,13 @@
 改变 dijkstra 最短路路径长度求解方法即可，有 20 分没拿到，暂不知原因。
 
 通过将 int 改为 long long 又多得了 10 分
+
+## 201709-4 通信网络
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170904/main.cpp)
+
+### 解题思路
+
+正向、反向分别进行深搜，检查是否能够全部访问，若能， count++。
+
+刚开始使用 int 二维数组，60分， 超时。改用邻接 vector 数组，100 分。
