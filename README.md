@@ -1,6 +1,26 @@
 # My_CCF-CSP_Answer
 记录我在解 CCF - CSP 时遇到的一些问题以及总结的经验。
 
+## 201712-4 行车路线
+
+[C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)
+
+### 解题思路
+
+改变 dijkstra 最短路路径长度求解方法即可，有 20 分没拿到，暂不知原因。
+
+通过将 int 改为 long long 又多得了 10 分
+
+## 201709-4 通信网络
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170904/main.cpp)
+
+### 解题思路
+
+正向、反向分别进行深搜，检查是否能够全部访问，若能， count++。
+
+刚开始使用 int 二维数组，60分， 超时。改用邻接 vector 数组，100 分。
+
 ## 201803-1 跳一跳
 
 [Java (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180301/Main.java)
@@ -37,22 +57,10 @@
 
 * ~~有 10 分没拿到，暂时不知为何。~~ 这 10 分注意区分**平局**和**以最后一子取胜**的情况即可！
 
-## 201712-4 行车路线
+## 201812-2 小明放学
 
-[C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)
-
-### 解题思路
-
-改变 dijkstra 最短路路径长度求解方法即可，有 20 分没拿到，暂不知原因。
-
-通过将 int 改为 long long 又多得了 10 分
-
-## 201709-4 通信网络
-
-[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170904/main.cpp)
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201812/20181202/main.cpp)
 
 ### 解题思路
 
-正向、反向分别进行深搜，检查是否能够全部访问，若能， count++。
-
-刚开始使用 int 二维数组，60分， 超时。改用邻接 vector 数组，100 分。
+简单模拟。
