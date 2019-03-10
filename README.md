@@ -65,6 +65,14 @@
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20181202/main.cpp)
 
+## 201809-4 再卖菜
+
+[C++ (70/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20181204/main.cpp)
+
+### 解题思路
+
+回溯。运行超时。
+
 ## 201812-1 小明上学
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201812/20181201/main.cpp)
