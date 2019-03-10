@@ -72,3 +72,11 @@
 ### 解题思路
 
 简单模拟。
+
+## 201812-4 数据中心
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201812/20181204/main.cpp)
+
+### 解题思路
+
+Kruskal + 并查集求最小生成树。
