@@ -1,4 +1,5 @@
 #include <cstdio>
+#include <algorithm>
 
 #define MAX_N 512
 
@@ -6,6 +7,7 @@ using namespace std;
 
 int yes[MAX_N];
 int today[MAX_N];
+bool vis[MAX_N][MAX_N][MAX_N];
 
 int n;
 
@@ -17,6 +19,12 @@ void cal(int d)
         return;
     if (d > 3 && (yes[d - 1] + yes[d - 2] + yes[d - 3]) / 3 != today[d - 2])
         return;
+    if (d >= 2)
+    {
+        if (vis[d][yes[d - 1]][yes[d - 2]])
+            return;
+        vis[d][yes[d - 1]][yes[d - 2]] = true;
+    }
     if (d == n + 1 && (yes[n] + yes[n - 1]) / 2 == today[n])
     {
         for (int i = 1; i<= n; i++)
@@ -49,6 +57,7 @@ void cal(int d)
 
 int main()
 {
+    fill_n(&vis[0][0][0], MAX_N * MAX_N * MAX_N, false);
     scanf("%d", &n);
     for (int i = 1; i <= n; i++)
         scanf("%d", &today[i]);

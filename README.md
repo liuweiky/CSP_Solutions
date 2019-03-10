@@ -67,11 +67,11 @@
 
 ## 201809-4 再卖菜
 
-[C++ (70/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20181204/main.cpp)
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20181204/main.cpp)
 
 ### 解题思路
 
-回溯。运行超时。
+回溯。 ~~运行超时。~~ [记忆化搜索](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20181204/main.cpp#L24)解决运行超时。
 
 ## 201812-1 小明上学
 
