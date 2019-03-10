@@ -57,6 +57,10 @@
 
 * ~~有 10 分没拿到，暂时不知为何。~~ 这 10 分注意区分**平局**和**以最后一子取胜**的情况即可！
 
+## 201809-1 卖菜
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201809/20180901/main.cpp)
+
 ## 201812-1 小明上学
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201812/20181201/main.cpp)
