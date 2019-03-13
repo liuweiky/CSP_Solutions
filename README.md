@@ -9,6 +9,14 @@
 
 两趟遍历。
 
+## 201612-2 工资计算
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161202/main.cpp)
+
+### 解题思路
+
+正向求解难，反向顺推易。
+
 ## 201712-4 行车路线
 
 [C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)
