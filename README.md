@@ -1,6 +1,14 @@
 # My_CCF-CSP_Answer
 记录我在解 CCF - CSP 时遇到的一些问题以及总结的经验。
 
+## 201612-1 中间数
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161201/main.cpp)
+
+### 解题思路
+
+两趟遍历。
+
 ## 201712-4 行车路线
 
 [C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)
@@ -9,7 +17,7 @@
 
 改变 dijkstra 最短路路径长度求解方法即可，有 20 分没拿到，暂不知原因。
 
-通过将 int 改为 long long 又多得了 10 分
+通过将 int 改为 long long 又多得了 10 分。
 
 ## 201709-4 通信网络
 
