@@ -17,6 +17,14 @@
 
 正向求解难，反向顺推易。
 
+## 201612-4 压缩编码
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161204/main.cpp)
+
+### 解题思路
+
+石子相邻合并的动态规划问题。
+
 ## 201712-4 行车路线
 
 [C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)
