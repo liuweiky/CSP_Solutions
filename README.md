@@ -61,6 +61,8 @@
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180304/main.cpp)
 
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180304/main-new.cpp)
+
 ### 解题思路
 
 博弈搜索。
@@ -72,6 +74,8 @@
 * 注意，在选择落子之前，要检查是否已经决出胜负或平局。
 
 * ~~有 10 分没拿到，暂时不知为何。~~ 这 10 分注意区分**平局**和**以最后一子取胜**的情况即可！
+
+> 20190315：精简了代码
 
 ## 201809-1 卖菜
 
