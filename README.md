@@ -49,9 +49,9 @@
 
 为避免超时，此题要注意的点非常多。
 
-[数值范围够用时，不用 long long，而用 int 来节省运算时间](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#8)
+[数值范围够用时，不用 long long，而用 int 来节省运算时间](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#L8)
 
-[树状数组更新时，若 delta 为零，无需任何更新](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#58, https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#62)
+[树状数组更新时，若 delta 为零，无需任何更新](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#L58, https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170905/main.cpp#L62)
 
 ## 201803-1 跳一跳
 
