@@ -41,6 +41,14 @@ Dijkstra + 最小生成树。
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201703/20170301/main.cpp)
 
+## 201703-2 学生排队
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201703/20170302/main.cpp)
+
+### 解题思路
+
+简单模拟。
+
 ## 201709-1 打酱油
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170901/main.cpp)
