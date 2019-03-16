@@ -41,6 +41,14 @@ Dijkstra + 最小生成树。
 
 正向求解难，反向顺推易。
 
+## 201612-3 权限查询
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161203/main.cpp)
+
+### 解题思路
+
+STL map、string 的使用。
+
 ## 201612-4 压缩编码
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161204/main.cpp)
