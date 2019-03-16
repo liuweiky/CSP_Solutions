@@ -5,6 +5,14 @@
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160901/main.cpp)
 
+## 201609-2 火车购票
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160902/main.cpp)
+
+### 解题思路
+
+简单模拟。
+
 ## 201609-4 交通规划
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp)
