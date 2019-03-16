@@ -41,6 +41,14 @@ Dijkstra + 最小生成树。
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170901/main.cpp)
 
+## 201709-2 公共钥匙盒
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201709/20170902/main.cpp)
+
+### 解题思路
+
+时间模拟，使用 event 保存某个时刻的事件，之后将所有事件按照时间排序，最后模拟一连串事件的发生。
+
 ## 201712-1 最小差值
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171201/main.cpp)
