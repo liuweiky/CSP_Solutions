@@ -1,31 +1,28 @@
-#include <iostream>
-#include <cmath>
+#include <cstdio>
+#include <climits>
+#include <algorithm>
+
+#define MAX_N 1024
 
 using namespace std;
 
-int main(void)
+int N;
+int nums[MAX_N];
+
+int main()
 {
-    int a[1024];
-    int n;
-    cin>>n;
-    for(int i=0;i<n;i++)
-    {
-        cin>>a[i];
-    }
+    scanf("%d", &N);
 
-    int min=10000;  //题目说明给定的数不超过10000
+    for (int i = 1; i <= N; i++)
+        scanf("%d", &nums[i]);
 
-    for(int i=0;i<n;i++)
-    {
-        for(int j=i+1;j<n;j++)
-        {
-            int m=a[i]-a[j];
-            m=abs(m);
-            if(m<min)
-                min=m;
-        }
-    }
+    int min_d = INT_MAX;
 
-    cout<<min;
+    for (int i = 1; i <= N; i++)
+        for (int j = i + 1; j <= N; j++)
+            min_d = min(min_d, abs(nums[i] - nums[j]));
+
+    printf("%d", min_d);
+
     return 0;
 }
