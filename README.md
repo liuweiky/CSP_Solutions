@@ -1,6 +1,16 @@
 # My_CCF-CSP_Answer
 记录我在解 CCF - CSP 时遇到的一些问题以及总结的经验。
 
+## 201609-4 交通规划
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp)
+
+### 解题思路
+
+Dijkstra + 最小生成树。
+
+注意使用边链表存储图时，快速获取最短路上任意一条边的长度的方式：https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp#L73,  https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp#L112
+
 ## 201612-1 中间数
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161201/main.cpp)
