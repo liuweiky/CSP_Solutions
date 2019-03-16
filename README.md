@@ -87,6 +87,8 @@ Dijkstra + 最小生成树。
 
 [Java (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180302/Main.java)
 
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201803/20180302/main.cpp)
+
 ### 解题思路
 
 简单模拟。
