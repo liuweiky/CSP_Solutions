@@ -11,6 +11,8 @@ Dijkstra + 最小生成树。
 
 注意使用边链表存储图时，快速获取最短路上任意一条边的长度的方式：https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp#L73,  https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp#L112
 
+为了取得最小总长度，Dijkstra 算法在遇到相同长度的路径时，应选择 ```graph[u][j]``` 最小的 https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201609/20160904/main.cpp#L75 （画个图就清楚了）
+
 ## 201612-1 中间数
 
 [C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201612/20161201/main.cpp)
