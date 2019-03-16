@@ -37,6 +37,18 @@ Dijkstra + 最小生成树。
 
 石子相邻合并的动态规划问题。
 
+## 201712-1 最小差值
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171201/main.cpp)
+
+## 201712-2 游戏
+
+[C++ (100/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171202/main.cpp)
+
+### 解题思路
+
+简单模拟。
+
 ## 201712-4 行车路线
 
 [C++ (90/100)](https://github.com/Heliovic/My_CCF-CSP_Answer/blob/master/201712/20171204/main.cpp)

@@ -1,40 +1,42 @@
-#include <iostream>
-#include <vector>
+#include <cstdio>
+#include <algorithm>
+
+#define MAX_N 1024
 
 using namespace std;
 
-int main(void)
+bool out[MAX_N];
+int cnt;
+int N, K;
+
+int main()
 {
-    int n,k;
-    cin>>n>>k;
-    vector<int> v;
-    for(int i=0;i<n;i++)
+    fill_n(out, MAX_N, false);
+    scanf("%d %d", &N, &K);
+
+    int ptr = 1, spk = 1;
+
+    cnt = N;
+
+    while (cnt != 1)
     {
-        v.push_back(i+1);
+        if (!out[ptr])
+        {
+            if (spk % K == 0 || spk % 10 == K)
+            {
+                out[ptr] = true;
+                cnt--;
+            }
+            spk++;
+        }
+        ptr++;
+        if (ptr > N)
+            ptr = 1;
     }
 
-    vector<int>::iterator it=v.begin();
-    int m=1;
-
-    while(v.size()>1)
-    {
-        if(m%k==0||m%10==k)
-        {
-            v.erase(it);
-        }else
-        {
-            it++;
-        }
-        if(it==v.end())
-        {
-            it=v.begin();
-        }
-        m++;
-    }
-
-    cout<<*(v.begin());
+    for (int i = 1; i <= N; i++)
+        if (!out[i])
+            printf("%d", i);
 
     return 0;
 }
-
-
